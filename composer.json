@@ -1,0 +1,23 @@
+{
+  "name": "comertis/files",
+  "description": "File handling library",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cristian Moraru",
+      "email": "cristian@comertis.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "7.1.* || 7.3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Comertis\\Files\\": "src/",
+      "Comertis\\Files\\Internal": "src/internal",
+      "Comertis\\Files\\Exceptions": "src/exceptions"
+    }
+  }
+}
