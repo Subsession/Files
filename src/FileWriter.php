@@ -25,26 +25,26 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * @category Files
- * @package  Comertis\Files
- * @author   Cristian Moraru <cristian@comertis.com>
+ * @package  Subsession\Files
+ * @author   Cristian Moraru <cristian@subsession.com>
  * @license  https://opensource.org/licenses/MIT MIT
  * @version  GIT: &Id&
- * @link     https://github.com/Comertis/Files
+ * @link     https://github.com/Subsession/Files
  */
 
-namespace Comertis\Files;
+namespace Subsession\Files;
 
-use Comertis\Files\Exceptions\FilePermissionException;
+use Subsession\Files\Exceptions\FilePermissionException;
 
 /**
  * Undocumented class
  *
  * @category Files
- * @package  Comertis\Files
- * @author   Cristian Moraru <cristian@comertis.com>
+ * @package  Subsession\Files
+ * @author   Cristian Moraru <cristian@subsession.com>
  * @license  https://opensource.org/licenses/MIT MIT
  * @version  Release: 1.0.0
- * @link     https://github.com/Comertis/Files
+ * @link     https://github.com/Subsession/Files
  */
 class FileWriter
 {

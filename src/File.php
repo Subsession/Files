@@ -25,24 +25,24 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * @category Files
- * @package  Comertis\Files
- * @author   Cristian Moraru <cristian@comertis.com>
+ * @package  Subsession\Files
+ * @author   Cristian Moraru <cristian@subsession.com>
  * @license  https://opensource.org/licenses/MIT MIT
  * @version  GIT: &Id&
- * @link     https://github.com/Comertis/Files
+ * @link     https://github.com/Subsession/Files
  */
 
-namespace Comertis\Files;
+namespace Subsession\Files;
 
 /**
  * Undocumented class
  *
  * @category Files
- * @package  Comertis\Files
- * @author   Cristian Moraru <cristian@comertis.com>
+ * @package  Subsession\Files
+ * @author   Cristian Moraru <cristian@subsession.com>
  * @license  https://opensource.org/licenses/MIT MIT
  * @version  Release: 1.0.0
- * @link     https://github.com/Comertis/Files
+ * @link     https://github.com/Subsession/Files
  */
 class File
 {
@@ -52,7 +52,7 @@ class File
      * @access private
      * @var    string
      */
-    private $_name;
+    private $name;
 
     /**
      * File extension
@@ -60,7 +60,7 @@ class File
      * @access private
      * @var    string
      */
-    private $_extension;
+    private $extension;
 
     /**
      * File name + extension
@@ -68,7 +68,7 @@ class File
      * @access private
      * @var    string
      */
-    private $_fullName;
+    private $fullName;
 
     /**
      * File content
@@ -76,7 +76,7 @@ class File
      * @access private
      * @var    FileContent|null
      */
-    private $_content;
+    private $content;
 
     /**
      * Constructor
@@ -89,7 +89,7 @@ class File
             return;
         }
 
-        $this->_content = null;
+        $this->content = null;
 
         $parts = explode(".", $name);
 
@@ -120,7 +120,7 @@ class File
      */
     public function getName()
     {
-        return $this->_name;
+        return $this->name;
     }
 
     /**
@@ -133,7 +133,7 @@ class File
      */
     public function setName($name)
     {
-        $this->_name = $name;
+        $this->name = $name;
 
         return $this;
     }
@@ -146,7 +146,7 @@ class File
      */
     public function getExtension()
     {
-        return $this->_extension;
+        return $this->extension;
     }
 
     /**
@@ -159,7 +159,7 @@ class File
      */
     public function setExtension($extension)
     {
-        $this->_extension = $extension;
+        $this->extension = $extension;
 
         return $this;
     }
@@ -172,11 +172,11 @@ class File
      */
     public function getFullName()
     {
-        if (isset($this->_fullName)) {
-            $this->_setFullName();
+        if (isset($this->fullName)) {
+            $this->setFullName();
         }
 
-        return $this->_fullName;
+        return $this->fullName;
     }
 
     /**
@@ -185,9 +185,9 @@ class File
      * @access private
      * @return self
      */
-    private function _setFullName()
+    private function setFullName()
     {
-        $this->_fullName = $this->getName() . "." . $this->getExtension();
+        $this->fullName = $this->getName() . "." . $this->getExtension();
     }
 
     /**
@@ -198,7 +198,7 @@ class File
      */
     public function getContent()
     {
-        return $this->_content;
+        return $this->content;
     }
 
     /**
@@ -211,7 +211,7 @@ class File
      */
     public function setContent($content)
     {
-        $this->_content = $content;
+        $this->content = $content;
 
         return $this;
     }

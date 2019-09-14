@@ -32,7 +32,7 @@
  * @link     https://github.com/Subsession/Files
  */
 
-namespace Subsession\Files\Internal;
+namespace Subsession\Files;
 
 /**
  * Undocumented class
@@ -44,56 +44,19 @@ namespace Subsession\Files\Internal;
  * @version  Release: 1.0.0
  * @link     https://github.com/Subsession/Files
  */
-class FileContent
+interface FileInterface
 {
-    /**
-     * File content
-     *
-     * @access private
-     * @var    mixed
-     */
-    private $content;
+    public function __constructor($name = null);
 
-    /**
-     * Constructor
-     *
-     * @param mixed $content File content
-     */
-    public function __construct($content)
-    {
-        $this->content = $content;
-    }
+    public function getName();
+    public function getExtension();
+    public function getFullName();
+    public function getPath();
+    public function getContent();
 
-    /**
-     * Read file content as string
-     *
-     * @access public
-     * @return string
-     */
-    public function __toString()
-    {
-        return (string) $this->content;
-    }
-
-    /**
-     * Read file content raw
-     *
-     * @access public
-     * @return mixed
-     */
-    public function raw()
-    {
-        return $this->content;
-    }
-
-    /**
-     * Read file content json_decoded
-     *
-     * @access public
-     * @return object|mixed
-     */
-    public function json()
-    {
-        return json_decode($this->content);
-    }
+    public function setName();
+    public function setExtension();
+    public function setFullName();
+    public function setPath();
+    public function setContent();
 }

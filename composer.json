@@ -1,23 +1,24 @@
 {
-  "name": "comertis/files",
+  "name": "subsession/files",
   "description": "File handling library",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
       "name": "Cristian Moraru",
-      "email": "cristian@comertis.com"
+      "email": "cristian.moraru@live.com",
+      "role": "Developer"
     }
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": "7.1.* || 7.3.*"
+    "php": ">=7.0.0"
   },
   "autoload": {
     "psr-4": {
-      "Comertis\\Files\\": "src/",
-      "Comertis\\Files\\Internal": "src/internal",
-      "Comertis\\Files\\Exceptions": "src/exceptions"
+      "Subsession\\Files\\": "src/",
+      "Subsession\\Files\\Internal": "src/internal",
+      "Subsession\\Files\\Exceptions": "src/exceptions"
     }
   }
 }
